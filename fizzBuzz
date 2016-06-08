@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title></title>
+</head>
+<body onload="fizzBuzz()">
+<div id="main">
+</div>
+
+<script>
+
+function fizzBuzz(){
+
+
+for (i=0; i < 101; i++){
+	
+	var div = document.getElementById('main');
+	
+	if (i % 3 == 0 && i % 5 == 0){ 					// test if number divisible by 3 and 5
+	
+		div.innerHTML +=  "fizzBuzz<br>";
+		
+	}
+	else if (i % 3 == 0){							// test if divisible by 3
+	
+		div.innerHTML +=  "fizz<br>";
+	
+	}
+	else if (i % 5 == 0){							// test if divisible by 5
+	
+		div.innerHTML +=  "Buzz<br>"
+	
+	}
+	else {
+	
+		div.innerHTML +=  i + "<br>";
+	
+	}
+}
+
+
+}
+
+</script>
+</body>
+</html>
